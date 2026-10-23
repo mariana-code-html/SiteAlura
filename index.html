@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missão IA — Games, Anime & Criação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <span class="eyebrow">MISSÃO IA // CULTURA POP</span>
+      <h1>Games, anime<br><span>e criatividade</span></h1>
+      <p>Teste seus conhecimentos sobre como a inteligência artificial aparece nos jogos, nas animações e na criação de personagens.</p>
+    </header>
+
+    <section class="panel" id="start-screen">
+      <div class="orb">✦</div>
+      <h2>Preparado para a missão?</h2>
+      <p>São 7 perguntas. Escolha uma resposta e descubra por que ela está certa ou errada.</p>
+      <button id="start-btn" class="primary">Iniciar missão <span>→</span></button>
+    </section>
+
+    <section class="panel quiz hidden" id="quiz-screen" aria-live="polite">
+      <div class="quiz-top">
+        <span id="question-counter">PERGUNTA 1/7</span>
+        <span id="score-label">PONTOS: 0</span>
+      </div>
+      <div class="progress"><div id="progress-fill"></div></div>
+      <p class="category" id="category"></p>
+      <h2 id="question-text"></h2>
+      <div id="answers" class="answers"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <button id="next-btn" class="primary hidden">Próxima pergunta <span>→</span></button>
+    </section>
+
+    <section class="panel hidden" id="result-screen">
+      <div class="orb">★</div>
+      <p class="category">MISSÃO CONCLUÍDA</p>
+      <h2 id="result-title">Mandou bem!</h2>
+      <p id="result-text"></p>
+      <div class="result-score" id="final-score"></div>
+      <button id="restart-btn" class="primary">Jogar novamente <span>↻</span></button>
+    </section>
+    <footer>MISSÃO IA <span>•</span> Aprender também é uma aventura.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
